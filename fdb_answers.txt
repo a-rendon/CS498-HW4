@@ -1,0 +1,9 @@
+Q1 (3 pts) — FoundationDB separates its architecture into a Transaction Management System (TMS) and a Storage System (SS). Why does FDB decouple these two components, and what does each layer handle?
+
+Q2 (3 pts) — During a write transaction in FDB, which component is responsible for detecting read-write conflicts between concurrent transactions, and at what point in the commit process does this check occur?
+
+Q3 (3 pts) — FDB's Sequencer assigns both a read version and a commit version to each transaction. What is the purpose of the read version, and how does it relate to the consistency guarantees FDB provides?
+
+Q4 (3 pts) — FDB supports snapshot reads. How do snapshot reads differ from standard reads with respect to conflict detection, and in what situation would you choose one over the other?
+
+Q5 (3 pts) — FDB claims that its recovery is "cheap" and does not require replaying a redo log in the critical path. Explain what makes this possible, referencing how StorageServers and LogServers interact during normal operation.
